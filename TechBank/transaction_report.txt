@@ -1,0 +1,10 @@
+| Test                            | Kỳ vọng             |
+| ------------------------------- | ------------------- |
+| Alice → Alice                   | Bị từ chối          |
+| Alice → `"Bob"`                 | Bị từ chối          |
+| Alice → Bob với 0 đồng          | Bị từ chối          |
+| Alice → Bob với -1000 đồng      | Bị từ chối          |
+| Alice → Bob với NaN             | Bị từ chối          |
+| Alice → BrokenAccount           | Rollback thành công |
+| Alice → Bob vượt số dư          | Bị từ chối          |
+| Tổng tiền trước = Tổng tiền sau | Luôn đúng           |
